@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-labelledby="subTitle subDesc" role="img">
+  <title id="subTitle">Subscription</title>
+  <desc id="subDesc">A payment card with a check badge indicating subscription</desc>
+  <rect x="2.5" y="5" width="14" height="14" rx="2.2" ry="2.2" fill="none" />
+  <rect x="4.5" y="8.2" width="10" height="2.2" rx="0.6" ry="0.6" fill="none" />
+  <circle cx="19.2" cy="17.8" r="3" fill="none" />
+  <path d="M18 17.8l0.9 0.9 1.6-1.8" fill="none" />
+</svg>

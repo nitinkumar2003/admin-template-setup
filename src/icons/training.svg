@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-labelledby="trainTitle trainDesc" role="img">
+  <title id="trainTitle">Training</title>
+  <desc id="trainDesc">A graduation cap representing training or learning</desc>
+  <path d="M2 9.5l10-5.2 10 5.2-10 5.2L2 9.5z" fill="none" />
+  <path d="M12 14.7v4.5" fill="none" />
+  <path d="M16.8 9.6c-.8.9-2.5 1.6-4.8 1.6-1.2 0-2.4-.18-3.3-.46" fill="none" />
+  <circle cx="12" cy="17.2" r="0.6" fill="currentColor" />
+</svg>
