@@ -38,18 +38,19 @@
   --color-white: #ffffff;
   --color-black: #101828;
 
-   --color-brand-25:  #fdf7fc;
-  --color-brand-50:  #fbeffc;
-  --color-brand-100: #f9e1f9;
-  --color-brand-200: #f4c7f3;
-  --color-brand-300: #eea3ea;
-  --color-brand-400: #e97fe2;
-  --color-brand-500: #E47ADA; /* 🌸 Main Brand Color */
-  --color-brand-600: #d45fc8;
-  --color-brand-700: #b74ead;
-  --color-brand-800: #943c8e;
-  --color-brand-900: #712d6f;
-  --color-brand-950: #4a1848;
+--color-brand-25:  #f4faff;
+--color-brand-50:  #e9f5fe;
+--color-brand-100: #d3ebfc;
+--color-brand-200: #a6d6f8;
+--color-brand-300: #79c2f4;
+--color-brand-400: #4cadaf;
+--color-brand-500: #1A7FC7; /* ⭐ Main Brand Color */
+--color-brand-600: #166eac;
+--color-brand-700: #125a8d;
+--color-brand-800: #0e456c;
+--color-brand-900: #0a324e;
+--color-brand-950: #061e2f;
+
   
   --color-blue-light-25: #f5fbff;
   --color-blue-light-50: #f0f9ff;

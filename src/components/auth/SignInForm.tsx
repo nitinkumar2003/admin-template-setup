@@ -154,7 +154,7 @@ export default function SignInForm() {
             />
             <Link
               href={routes_info.forgot_password}
-              className="text-sm text-brand-500 hover:text-brand-600 dark:text-brand-400"
+              className="text-sm text-brand-500 hover:text-brand-600 dark:text-gray-200"
             >
               {t_commmon("forgotPassword")}
             </Link>
