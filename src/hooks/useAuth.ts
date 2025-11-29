@@ -13,37 +13,37 @@ export function useAuth() {
 
   const login = (data: any, day?: any) => {
     const _tokenValue = data?.token;
-    setCookie(storage_keys.liftHER_token, _tokenValue, day); // 1 day expiry
-    setCookie(storage_keys.liftHER_login, data, day);
-    setLocalStorage(storage_keys.liftHER_token, _tokenValue);
-    setLocalStorage(storage_keys.liftHER_login, data);
+    setCookie(storage_keys.ecom_token, _tokenValue, day); // 1 day expiry
+    setCookie(storage_keys.ecom_login, data, day);
+    setLocalStorage(storage_keys.ecom_token, _tokenValue);
+    setLocalStorage(storage_keys.ecom_login, data);
     goTo(routes_info.dashboard);
   };
 
   const loggedInDetails = useMemo(() => {
-    const loggedDtails = Cookies.get(storage_keys.liftHER_login);
+    const loggedDtails = Cookies.get(storage_keys.ecom_login);
     if (!loggedDtails) return;
     return JSON.parse(loggedDtails) || null;
   }, [])
 
   const logout = () => {
-    Cookies.remove(storage_keys.liftHER_token);
-    Cookies.remove(storage_keys.liftHER_login);
-    removeLocalStorage(storage_keys.liftHER_token);
-    removeLocalStorage(storage_keys.liftHER_login);
+    Cookies.remove(storage_keys.ecom_token);
+    Cookies.remove(storage_keys.ecom_login);
+    removeLocalStorage(storage_keys.ecom_token);
+    removeLocalStorage(storage_keys.ecom_login);
 
     goTo(routes_info.sign_in);
   };
 
   const redirectIfAuthenticated = () => {
-    const token = Cookies.get(storage_keys.liftHER_token);
+    const token = Cookies.get(storage_keys.ecom_token);
     if (token) {
       goTo(routes_info.dashboard);
     };
   };
 
   const redirectIfNotAuthenticated = () => {
-    const token = Cookies.get(storage_keys.liftHER_token);
+    const token = Cookies.get(storage_keys.ecom_token);
     if (!token) {
       goTo(routes_info.sign_in)
     };

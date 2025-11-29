@@ -1,6 +1,6 @@
 export const storage_keys = {
-    liftHER_token: 'liftHER_token',
-    liftHER_login: 'liftHER_login',
+    ecom_token: 'ecom_token',
+    ecom_login: 'ecom_login',
     language_locale: 'language_locale',
     otp_expire_time: "otp_expire_time",
     is_otp_sent: "is_sent_otp",

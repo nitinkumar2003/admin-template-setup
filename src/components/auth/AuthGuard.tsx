@@ -39,7 +39,7 @@ export default function AuthGuard({
   const [authorized, setAuthorized] = useState(false);
 
   useEffect(() => {
-    const token = getCookie(storage_keys.liftHER_token) || getLocalStorage(storage_keys.liftHER_login)
+    const token = getCookie(storage_keys.ecom_token) || getLocalStorage(storage_keys.ecom_login)
     // const isPublic = pathname.includes("signin") || pathname?.includes("forgot-password")
     const isPublic = public_routes_info.some(route =>
       pathname?.includes(route)
@@ -51,10 +51,10 @@ export default function AuthGuard({
     }
 
     // if(token==null  || token ==undefined || token =='' || token=="undefined"){
-    //   removeCookies(storage_keys.liftHER_login);
-    //   removeCookies(storage_keys.liftHER_token);
-    //   removeLocalStorage(storage_keys.liftHER_login);
-    //   removeLocalStorage(storage_keys.liftHER_token)
+    //   removeCookies(storage_keys.ecom_login);
+    //   removeCookies(storage_keys.ecom_token);
+    //   removeLocalStorage(storage_keys.ecom_login);
+    //   removeLocalStorage(storage_keys.ecom_token)
     // }
     if (token && isPublic) {
       router.replace(routes_info.dashboard);

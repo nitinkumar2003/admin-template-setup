@@ -10,7 +10,7 @@ export interface ApiResponse<T = any> {
 // 🧩 Create axios instance dynamically with cookie-based Bearer token
 export async function createAxiosServerInstance() {
   const cookieStore = await cookies();
-  const token = cookieStore.get("liftHER_token")?.value;
+  const token = cookieStore.get("ecom_token")?.value;
 
   const instance = axios.create({
     baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,

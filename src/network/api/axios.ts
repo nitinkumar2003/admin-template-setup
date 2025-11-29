@@ -10,7 +10,7 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(
   async (config) => {
-    const token = typeof window !== "undefined" ? getLocalStorage(storage_keys.liftHER_token) || getCookie(storage_keys.liftHER_token) : null;
+    const token = typeof window !== "undefined" ? getLocalStorage(storage_keys.ecom_token) || getCookie(storage_keys.ecom_token) : null;
 
     if ( config.headers) {
       // Accept-Language
@@ -31,10 +31,10 @@ axiosInstance.interceptors.response.use(
     console.log("API Error:", error?.response || error);
     if (error?.response?.status === 401) {
       // TODO: handle logout or redirect if needed
-      removeCookies(storage_keys.liftHER_token);
-      removeCookies(storage_keys.liftHER_login);
-      removeLocalStorage(storage_keys.liftHER_token);
-      removeLocalStorage(storage_keys.liftHER_login);
+      removeCookies(storage_keys.ecom_token);
+      removeCookies(storage_keys.ecom_login);
+      removeLocalStorage(storage_keys.ecom_token);
+      removeLocalStorage(storage_keys.ecom_login);
       if (typeof window !== "undefined") {
         const isLoginPage = window.location.pathname.includes("signin");
         if (!isLoginPage) {
